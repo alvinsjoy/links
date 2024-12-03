@@ -16,7 +16,6 @@ import {
 } from 'react-icons/fa6';
 import { SiWakatime, SiLeetcode } from 'react-icons/si';
 import { LinkCard } from './link-card';
-import { title } from 'process';
 
 const links = [
   {
