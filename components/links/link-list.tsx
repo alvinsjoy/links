@@ -12,9 +12,11 @@ import {
   FaSpotify,
   FaStackOverflow,
   FaHackerrank,
+  FaBluesky,
 } from 'react-icons/fa6';
 import { SiWakatime, SiLeetcode } from 'react-icons/si';
 import { LinkCard } from './link-card';
+import { title } from 'process';
 
 const links = [
   {
@@ -64,6 +66,12 @@ const links = [
     description: 'Talk to me on Discord',
     href: 'https://discord.com/users/825382504353234954',
     icon: FaDiscord,
+  },
+  {
+    title: 'Bluesky',
+    description: 'Follow me on Bluesky',
+    href: 'https://bsky.app/profile/alvin.is-a.dev',
+    icon: FaBluesky,
   },
   {
     title: 'Leetcode',
