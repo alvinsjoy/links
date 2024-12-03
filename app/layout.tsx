@@ -12,6 +12,32 @@ export const metadata: Metadata = {
   icons: {
     icon: '/favicon.png',
   },
+  keywords: [
+    'portfolio',
+    'alvin joy',
+    'skill',
+    'javascript',
+    'alvin',
+    'profile',
+    'developer',
+  ],
+  openGraph: {
+    title: 'Alvin Joy',
+    description:
+      "A collection of Alvin Joy's social, professional, and coding profile links.",
+    url: 'https://aj.is-a.dev',
+    siteName: 'Alvin Joy',
+    images: ['/image.png'],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Alvin Joy',
+    description:
+      "A collection of Alvin Joy's social, professional, and coding profile links.",
+    site: '@_alvinjoy_',
+    images: ['/image.png'],
+  },
 };
 
 export default function RootLayout({
