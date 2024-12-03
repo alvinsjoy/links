@@ -37,7 +37,7 @@ const links = [
   },
   {
     title: 'LinkedIn',
-    description: 'Connect with me professionally',
+    description: 'Connect with me',
     href: 'https://linkedin.com/in/alvinsjoy',
     icon: FaLinkedin,
   },
@@ -67,25 +67,25 @@ const links = [
   },
   {
     title: 'Leetcode',
-    description: 'Check out my Leetcode profile',
+    description: 'Check out my Leetcode',
     href: 'https://leetcode.com/u/alvinjoy',
     icon: SiLeetcode,
   },
   {
     title: 'HackerRank',
-    description: 'Check out my HackerRank profile',
+    description: 'Check out my HackerRank',
     href: 'https://www.hackerrank.com/alvinjoy',
     icon: FaHackerrank,
   },
   {
     title: 'Wakatime',
-    description: 'See my coding stats on Wakatime',
+    description: 'See my coding stats',
     href: 'https://wakatime.com/@alvinjoy',
     icon: SiWakatime,
   },
   {
     title: 'StackOverflow',
-    description: 'Check out my StackOverflow profile',
+    description: 'Check out my StackOverflow',
     href: 'https://stackoverflow.com/users/23590914',
     icon: FaStackOverflow,
   },
