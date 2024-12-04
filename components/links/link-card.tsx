@@ -32,15 +32,15 @@ export function LinkCard({
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
     >
-      <div className="flex items-center gap-4 pr-12">
-        <div className="relative w-12 h-12 flex items-center justify-center rounded-xl bg-white/50 dark:bg-black/50 backdrop-blur-sm">
+      <div className="flex items-start gap-4 pr-12">
+        <div className="relative shrink-0 w-12 h-12 flex items-center justify-center rounded-xl bg-white/50 dark:bg-black/50 backdrop-blur-sm">
           <Icon className="w-7 h-7 text-primary dark:text-primary" />
         </div>
-        <div>
-          <h3 className="font-semibold text-black dark:text-white group-hover:text-black dark:group-hover:text-white transition-colors">
+        <div className="min-w-0 flex-1">
+          <h3 className="font-semibold text-black dark:text-white group-hover:text-black dark:group-hover:text-white transition-colors truncate">
             {title}
           </h3>
-          <p className="text-sm text-black/70 dark:text-white/70 group-hover:text-black/70 dark:group-hover:text-white/80 transition-colors">
+          <p className="text-sm text-black/70 dark:text-white/70 group-hover:text-black/70 dark:group-hover:text-white/80 transition-colors line-clamp-2">
             {description}
           </p>
         </div>
