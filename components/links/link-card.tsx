@@ -33,9 +33,12 @@ export function LinkCard({
       whileTap={{ scale: 0.98 }}
     >
       <div className="flex items-start gap-4">
-        <div className="relative shrink-0 w-12 h-12 flex items-center justify-center rounded-xl bg-white/50 dark:bg-black/50 backdrop-blur-sm">
+        <motion.div
+          className="relative shrink-0 w-12 h-12 flex items-center justify-center rounded-xl bg-white/50 dark:bg-black/50 backdrop-blur-sm"
+          whileHover={{ rotate: 5 }}
+        >
           <Icon className="w-6 h-6 text-primary dark:text-primary" />
-        </div>
+        </motion.div>
         <div className="min-w-0 flex-1 pr-12">
           <h3 className="font-semibold text-black dark:text-white group-hover:text-black dark:group-hover:text-white transition-colors truncate">
             {title}
