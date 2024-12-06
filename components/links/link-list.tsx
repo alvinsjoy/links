@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { LinkGroup } from './link-group';
 import { Links } from './links';
 

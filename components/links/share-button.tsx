@@ -3,7 +3,7 @@
 import { Button } from '@/components/ui/button';
 import { FaClipboard, FaClipboardCheck } from 'react-icons/fa6';
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'motion/react';
 
 interface ShareButtonProps {
   url: string;

@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { IconType } from 'react-icons';
 import { LinkCard } from './link-card';
 
