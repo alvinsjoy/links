@@ -1,6 +1,5 @@
 'use client';
 
-import { cn } from '@/lib/utils';
 import { motion } from 'motion/react';
 import { IconType } from 'react-icons';
 import { ShareButton } from './share-button';
@@ -10,7 +9,6 @@ interface LinkCardProps {
   description: string;
   href: string;
   icon: IconType;
-  className?: string;
 }
 
 export function LinkCard({
@@ -18,19 +16,14 @@ export function LinkCard({
   description,
   href,
   icon: Icon,
-  className,
 }: LinkCardProps) {
   return (
     <motion.a
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className={cn(
-        'group relative block w-full rounded-3xl bg-white/30 dark:bg-black/30 backdrop-blur-lg p-6 shadow-2xl transition-all hover:-translate-y-1 hover:shadow-3xl',
-        className,
-      )}
+      className="group relative block w-full rounded-3xl bg-white/30 dark:bg-black/30 backdrop-blur-lg p-6 shadow-2xl"
       whileHover={{ scale: 1.02 }}
-      whileTap={{ scale: 0.98 }}
     >
       <div className="flex items-start gap-4">
         <motion.div

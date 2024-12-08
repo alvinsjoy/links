@@ -1,6 +1,7 @@
 import { LinkList } from '@/components/links/link-list';
 import { ProfileCard } from '@/components/profile/profile-card';
 import { ThemeSwitch } from '@/components/theme-switch';
+import { CommandMenu } from '@/components/cmd-menu';
 import { BackgroundGradientAnimation } from '@/components/ui/background-gradient-animation';
 
 export default function Home() {
@@ -20,9 +21,10 @@ export default function Home() {
         containerClassName="fixed inset-0 z-0"
       />
 
-      <main className="relative flex min-h-screen flex-col items-center justify-center p-8">
+      <main className="relative flex min-h-screen flex-col items-center justify-center p-4">
         <ThemeSwitch />
         <div className="relative z-10 w-full max-w-2xl mx-auto">
+          <CommandMenu />
           <ProfileCard />
           <LinkList />
         </div>
