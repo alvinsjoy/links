@@ -1,6 +1,7 @@
 'use client';
 
 import { Fragment, useEffect, useState, useCallback } from 'react';
+import { FaLink, FaCode } from 'react-icons/fa6';
 import {
   CommandDialog,
   CommandEmpty,
@@ -61,6 +62,31 @@ export function CommandMenu() {
         <CommandInput placeholder="Type a command or search..." />
         <CommandList>
           <CommandEmpty>No results found.</CommandEmpty>
+          <CommandGroup heading="General">
+            <CommandItem
+              value="Copy Link"
+              onSelect={() =>
+                runCommand(() =>
+                  navigator.clipboard.writeText(window.location.href),
+                )
+              }
+            >
+              <FaLink className="mr-2 h-4 w-4" />
+              Copy Link
+            </CommandItem>
+            <CommandItem
+              value="Source Code"
+              onSelect={() =>
+                runCommand(() =>
+                  window.open('https://github.com/alvinsjoy/links', '_blank'),
+                )
+              }
+            >
+              <FaCode className="mr-2 h-4 w-4" />
+              Source Code
+            </CommandItem>
+          </CommandGroup>
+          <CommandSeparator />
           {Links.map((group, index) => (
             <Fragment key={group.title}>
               <CommandGroup heading={group.title}>
