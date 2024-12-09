@@ -22,6 +22,7 @@ export function LinkCard({
       href={href}
       target="_blank"
       rel="noopener noreferrer"
+      data-umami-event={title}
       className="group relative block w-full rounded-3xl bg-white/30 dark:bg-black/30 backdrop-blur-lg p-6 shadow-2xl"
       whileHover={{ scale: 1.02 }}
     >

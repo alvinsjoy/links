@@ -94,6 +94,7 @@ export function CommandMenu() {
                   <CommandItem
                     key={link.href}
                     value={link.title}
+                    data-umami-event={link.title}
                     onSelect={() =>
                       runCommand(() => window.open(link.href, '_blank'))
                     }
