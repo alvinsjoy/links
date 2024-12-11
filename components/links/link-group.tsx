@@ -1,8 +1,9 @@
 'use client';
 
-import { motion } from 'motion/react';
+import { motion, useInView } from 'motion/react';
 import { IconType } from 'react-icons';
 import { LinkCard } from './link-card';
+import { useRef } from 'react';
 
 interface LinkGroupProps {
   title: string;
@@ -15,10 +16,14 @@ interface LinkGroupProps {
 }
 
 export function LinkGroup({ title, links }: LinkGroupProps) {
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true });
+
   return (
     <motion.div
+      ref={ref}
       initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
+      animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.5 }}
       className="space-y-4"
     >

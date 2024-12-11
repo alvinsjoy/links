@@ -16,6 +16,7 @@ export default function Home() {
         fourthColor="128, 0, 255"
         fifthColor="200, 0, 255"
         pointerColor="140, 100, 255"
+        interactive={false}
         size="80%"
         blendingValue="hard-light"
         containerClassName="fixed inset-0 z-0"
