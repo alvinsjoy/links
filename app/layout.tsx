@@ -6,6 +6,7 @@ import { ThemeProvider } from '@/components/theme-provider';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://aj.is-a.dev'),
   title: 'Alvin Joy',
   description:
     "A collection of Alvin Joy's social, professional, and coding profile links.",
@@ -20,6 +21,9 @@ export const metadata: Metadata = {
     'alvin',
     'profile',
     'developer',
+    'links',
+    'linktree',
+    'website',
   ],
   openGraph: {
     title: 'Alvin Joy',
