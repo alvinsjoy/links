@@ -28,7 +28,7 @@ export function LinkCard({
     >
       <div className="flex items-start gap-4">
         <motion.div
-          className="relative shrink-0 w-12 h-12 flex items-center justify-center rounded-xl bg-white/50 dark:bg-black/50 backdrop-blur-sm"
+          className="relative shrink-0 w-12 h-12 flex items-center justify-center rounded-xl bg-white/50 dark:bg-black/50 backdrop-blur-xs"
           whileHover={{ rotate: 5 }}
         >
           <Icon className="w-6 h-6 text-primary dark:text-primary" />

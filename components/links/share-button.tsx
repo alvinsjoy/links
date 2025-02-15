@@ -26,7 +26,7 @@ export function ShareButton({ url }: ShareButtonProps) {
     <Button
       variant="ghost"
       size="icon"
-      className="absolute right-4 top-1/2 -translate-y-1/2 w-8 h-8 bg-white/10 dark:bg-black/10 backdrop-blur-sm rounded-full hover:scale-110 transition-all"
+      className="absolute right-4 top-1/2 -translate-y-1/2 w-8 h-8 bg-white/10 dark:bg-black/10 backdrop-blur-xs rounded-full hover:scale-110 transition-all"
       onClick={(e) => {
         e.preventDefault();
         handleShare();
